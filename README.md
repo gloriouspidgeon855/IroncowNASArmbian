@@ -1,6 +1,6 @@
 # IroncowNASArmbian
 
-# Warning! You absolutely should not do this unless you know what you're doing! I am a complete amateur and I almost bricked my device 4 times, but these final configuration files worked for me.
+# Warning! You absolutely should not do this unless you know what you're doing!
 
 Armbian config files for Ironcow AI NAS 1
 
