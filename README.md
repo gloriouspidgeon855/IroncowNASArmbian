@@ -4,7 +4,7 @@
 
 Armbian config files for Ironcow AI NAS 1
 
-rk3568-nas.dtb, armbianEnv.txt, and extlinux.conf are the two files necessary to add to an Armbian Linux v6.12 Odroid M1S image to make it hardware compatible for the Ironcow AI NAS 1.
+rk3568-nas.dtb, armbianEnv.txt, and extlinux.conf are the three files necessary to add to an Armbian Linux v6.12 Odroid M1S image to make it hardware compatible for the Ironcow AI NAS 1.
 
 rk3568-nas.dtb should be placed:
 
