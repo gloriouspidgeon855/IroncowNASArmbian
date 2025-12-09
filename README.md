@@ -25,3 +25,7 @@ You ABSOLUTELY MUST edit the UUID in BOTH armbianEnv.txt AND extlinux.conf to ma
 The rk3568-nas.dts file was compiled with the linux 6.12 kernel files based on information from the stock .dtb file and comparison with the very hardware similar QNAP TS433 existing .dts file in the mainline kernel.
 
 Alternatively, the unspyware.sh script will disable the stock backdoors (at least the ones that were easiest to find/most annoying) and let you enter the desktop environment with the stock Debian 11 OS.
+
+# You can also boot Armbian from a USB stick with manual intervention
+
+read armbianOnAUSBStick.md
