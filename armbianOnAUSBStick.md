@@ -25,3 +25,7 @@ boot
 by default, when this NAS turns on, it is in USB client mode. It is expecting you to plug it into a computer. This means the USB port is useless because it won't recognize anything you plug in by default. If you are in the recovery mode root shell or in a forced root shell from boot arguments, you must run this command to enable the USB port:
 
 echo host > /sys/kernel/debug/usb/fcc00000.dwc3/mode  
+
+you can also test what mode it's in with:
+
+find /sys/kernel/debug -name "mode" | grep dwc3
