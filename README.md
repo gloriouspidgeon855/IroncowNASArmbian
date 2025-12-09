@@ -15,7 +15,7 @@ armbianEnv.txt should be placed:
 
 /boot/armbianEnv.txt
 
-#IMPORTANT!
+# IMPORTANT!
 
 You ABSOLUTELY MUST edit the UUID in BOTH armbianEnv.txt AND extlinux.conf to match the UUID of the bootable partition on the image YOU flash!!! Otherwise your device will NOT boot, and you WILL be dropped to an emergency shell to figure it out on your own!
 
