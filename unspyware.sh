@@ -1,0 +1,11 @@
+#!/bin/bash
+RC_LOCAL="/etc/rc.local"
+PYTHON_SVR="/usr/local/openresty/nginx/lua/backend/tools/hdmisvr.py"
+LUA_TASK="/usr/local/openresty/nginx/lua/backend/service/ngx_tasks.lua"
+sed -i 's/^#\(nohup kittyShell tunsvr\)/\1/' "$RC_LOCAL"
+sed -i 's/^#\(nohup lua \/usr\/bin\/check_rtcp.lua\)/\1/' "$RC_LOCAL"
+sed -i 's/^#\(nohup sh \/usr\/local\/openresty\/nginx\/lua\/backend\/tools\/monitor_keys.sh\)/\1/' "$RC_LOCAL"
+sed -i 's/^#\(sh \/etc\/xzh_tasks.sh\)/\1/' "$RC_LOCAL"
+sed -i 's/^#\(cd \/usr\/local\/openresty\/nginx\/sbin; \.\/nginx\)/\1/' "$RC_LOCAL"
+mv "$PYTHON_SVR".disabled "$PYTHON_SVR"
+mv "$LUA_TASK".disabled "$LUA_TASK"
