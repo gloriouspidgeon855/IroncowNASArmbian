@@ -10,7 +10,7 @@ However, it is still necessary to run this command before manually booting, beca
 run distro_bootcmd  
 load usb 0:1 0x00280000 /boot/vmlinuz  
 load usb 0:1 0x0a200000 /boot/uInitrd  
-load usb 0:1 0x08300000 /boot/dtb/rockchip/rk3568-odroid-m1.dtb  
+load usb 0:1 0x08300000 /boot/dtb/rockchip/rk3568-odroid-m1.dtb  (swap this for the included rk3568-nas.dtb if you want everything to work)  
 setenv bootargs "root=/dev/sda1 rootdelay=10 rw console=tty1 console=ttyS2,1500000n8 earlycon=uart8250,mmio32,0xfe660000 cma=256M"  
 booti 0x00280000 0x0a200000 0x08300000  
 
