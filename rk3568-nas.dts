@@ -157,7 +157,6 @@
 	fan: pwm-fan {
 		compatible = "pwm-fan";
 		#cooling-cells = <2>;
-		/* Polarity 1 (Inverted) - Confirmed Working */
 		pwms = <&pwm7 0 50000 0>;
 		/* 10-step Smooth Curve */
 		cooling-levels = <0 32 64 96 128 160 192 224 240 255>;
@@ -628,4 +627,5 @@
 	};
 
 };
+
 
