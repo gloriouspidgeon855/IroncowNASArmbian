@@ -2,7 +2,7 @@
 
 After you have dissassembled the housing and plugged in a serial adapter to the debug serial port and opened a serial terminal at 1500000 baud, hold down Ctrl-C and then press the power button on the NAS. After the boot interrupt you will enter the uboot shell.
 
-note: distro_bootcmd will fail to boot unless you have boot an extlinux.conf file in /boot/extlinux.conf on your USB drive configured to boot the image properly.  
+note: distro_bootcmd will fail to boot unless you have put an extlinux.conf file in /boot/extlinux.conf on your USB drive configured to boot the image properly.  
 However, it is still necessary to run this command before manually booting, because the USB controller defaults to client mode and distro_bootcmd puts it in host mode.
 
 # manual boot process with odroid m1s armbian image:
