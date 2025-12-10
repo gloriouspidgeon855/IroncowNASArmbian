@@ -260,36 +260,19 @@
 
 /* --- USB CONFIGURATION --- */
 &usb_host0_xhci { status = "okay"; dr_mode = "host"; };
-													 
-															   
-
-				 
-				 
-				  
-  
-
-		   
+													    
 &combphy0 { status = "okay"; phy-supply = <&vcc5v0_otg>; };
-							
-  
 
-&usb2phy0 { status = "okay"; };
-				 
+&usb2phy0 { status = "okay"; };				 
 		   
-&usb2phy0_otg { status = "okay"; vbus-supply = <&vcc5v0_otg>; };
-							  
-   
+&usb2phy0_otg { status = "okay"; vbus-supply = <&vcc5v0_otg>; }; 
 
 &usb_host0_ehci { status = "okay"; };
 &usb_host0_ohci { status = "okay"; };
-									 
-
+								 
 &usb2phy1 { status = "okay"; };
-				 
-		   
+				 	   
 &usb2phy1_otg { status = "okay"; phy-supply = <&vcc5v0_sys>; };
-							 
-   
 
 &usb_host1_ehci { status = "disabled"; };
 &usb_host1_ohci { status = "disabled"; };
@@ -627,5 +610,6 @@
 	};
 
 };
+
 
 
