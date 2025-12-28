@@ -18,6 +18,10 @@ armbianEnv.txt should be placed:
 
 /boot/armbianEnv.txt
 
+# UPDATE 12/29/2025:
+
+Discovered that kernel module upgrades will break boot if you set up your system this way. A more reliable method is to put the rk3568-nas.dtb file directly in the boot folder, then set the fdtfile variable in armbianEnv.txt to "../rk3568-nas.dtb" the .. tokens are important, it will make uboot find the .dtb file in your boot folder instead of the device tree folder.
+
 # IMPORTANT!
 
 You ABSOLUTELY MUST edit the UUID in BOTH armbianEnv.txt AND extlinux.conf to match the UUID of the bootable partition on the image YOU flash!!! Otherwise your device will NOT boot, and you WILL be dropped to an emergency shell to figure it out on your own!
